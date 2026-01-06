@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Youssef Lahmer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+
+        nav a:hover { opacity: 0.7; }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 50px;
+            background: white;
+            color: #203a43;
+            padding: 14px 22px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <strong>Youssef Lahmer</strong>
+    <div>
+        <a href="index.html">Accueil</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">À propos</a>
+        <a href="mailto:lahmery175@gmail.com">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h1>Mon Portfolio</h1>
+
+    <div class="projects">
+        <div class="card">
+            <img src="images/moway.jpg" alt="Robot Moway">
+            <h3>🤖 Robot Moway – C</h3>
+            <p>Programmation d’un robot autonome avec suivi de ligne, gestion des capteurs et logique embarquée en C.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/garage.jpg" alt="Porte de garage">
+            <h3>🚪 Automatisation porte de garage</h3>
+            <p>Automatisation industrielle avec automate Siemens S7-1200 sous TIA Portal.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/lumiere.jpg" alt="Robot lumière">
+            <h3>💡 Robot suiveur de lumière</h3>
+            <p>Conception d’un robot Microbug capable de suivre une source lumineuse.</p>
+        </div>
+    </div>
+
+    <a class="back" href="index.html">⬅ Retour à l’accueil</a>
+</div>
+
+</body>
+</html>

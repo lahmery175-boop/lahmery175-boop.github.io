@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos | Youssef Lahmer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+
+        nav a:hover { opacity: 0.7; }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            line-height: 1.7;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 40px;
+            background: white;
+            color: #203a43;
+            padding: 14px 22px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <strong>Youssef Lahmer</strong>
+    <div>
+        <a href="index.html">Accueil</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">À propos</a>
+        <a href="mailto:lahmery175@gmail.com">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h1>À propos de moi</h1>
+        <p>
+            Étudiant en <strong>BUT Génie Électrique et Informatique Industrielle</strong>,
+            je suis passionné par la robotique, l’automatisme et la programmation.
+        </p>
+        <p>
+            J’ai acquis des compétences solides en <strong>C, C++, Java</strong>,
+            en automatisme industriel avec <strong>Siemens S7-1200 (TIA Portal)</strong>,
+            ainsi qu’en électronique et systèmes embarqués.
+        </p>
+        <p>
+            Curieux, autonome et rigoureux, je cherche une <strong>alternance</strong>
+            me permettant de mettre en pratique mes compétences tout en continuant à apprendre.
+        </p>
+
+        <a class="back" href="index.html">⬅ Retour à l’accueil</a>
+    </div>
+</div>
+
+</body>
+</html>
